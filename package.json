@@ -1,0 +1,23 @@
+{
+  "name": "uoss",
+  "version": "1.0.0",
+  "description": "上传文件到阿里云oss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js dev",
+    "online": "node index.js online"
+  },
+  "keywords": [
+    "node",
+    "oss",
+    "upload"
+  ],
+  "author": "dctxf",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^4.8.0",
+    "co": "^4.6.0"
+  }
+}
+
