@@ -1,7 +1,6 @@
 # uoss
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/dctxf/uoss)
+[![npm](https://img.shields.io/badge/uoss-1.0.1-green.svg)](https://github.com/dctxf/uoss)
 [![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/dctxf/uoss)
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&style=plastic)](https://github.com/dctxf/uoss)
 
 上传文件到阿里云oss
 
@@ -27,7 +26,3 @@ const uo = new UOSS({
 
 [issues](https://github.com/dctxf/uoss/issues)
 
-## 关注我
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/dctxf)
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)](https://github.com/dctxf/uoss)
