@@ -2,7 +2,7 @@
  * @Author: dctxf
  * @Date:   2017-05-15 16:17:24
  * @Last Modified by:   dctxf
- * @Last Modified time: 2017-05-16 16:58:35
+ * @Last Modified time: 2017-05-17 11:42:00
  */
 
 'use strict';
@@ -16,16 +16,18 @@ const UOSS = function (config) {
     bucket: config.bucket
   });
 };
-UOSS.prototype.upload = function () {
+UOSS.prototype.list = function (options, callback) {
   const client = this.client;
+  options = options || {};
   co(function* () {
-    const result = yield client.list({
-      'max-keys': 5
-    });
-    console.log(result);
+    const list = yield client.list(options);
+    callback.call(this, list);
   }).catch(function (err) {
     console.log(err);
-  });
+  })
+}
+UOSS.prototype.upload = function () {
+
 }
 module.exports = UOSS;
 
